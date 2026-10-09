@@ -14,3 +14,5 @@ print(f"El total de paquets és: {total_paquets}")
 # Demana a l'usuari la velocitat d'una connexió en Mbps. Converteix el valor
 # introduït a un nombre decimal i calcula la velocitat equivalent en MB/s
 # dividint-la per 8. Mostra el resultat.
+velocitat_mbs = velocitat_mbps / 8
+print(f"La velocitat equivalent en MB/s és: {velocitat_mbs:.2f} MB/s")
