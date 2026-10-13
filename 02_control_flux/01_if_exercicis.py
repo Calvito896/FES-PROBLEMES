@@ -40,12 +40,12 @@
 # Demana el consum de dades en GB d'una línia mòbil. El pla inclou 20 GB.
 # Indica si el consum és dins del límit o si l'ha superat; en aquest últim cas,
 # calcula quants GB addicionals s'han consumit.
-pla_dades = 20
-GB_consumits = int(input("Introdueix el gb consumits: "))
+#pla_dades = 20
+#GB_consumits = int(input("Introdueix el gb consumits: "))
 
-resultat_dades = pla_dades-GB_consumits
+#resultat_dades = pla_dades-GB_consumits
 
-print(f"{resultat_dades}")
+#print(f"{resultat_dades}")
 
 # Exercici 4: Diagnòstic d'una connexió de fibra
 # Demana si l'indicador LOS del terminal òptic està encès i si l'indicador
@@ -94,3 +94,16 @@ print(f"{resultat_dades}")
 # d'usuaris. Assigna prioritat crítica si afecta un servei crític i no hi ha
 # alternativa, o si afecta almenys 50 usuaris i no hi ha alternativa; alta si
 # afecta almenys 10 usuaris o un servei crític; en qualsevol altre cas, baixa.
+
+incidencia_critica = input("La incidencia afecta un servei crític? (si/no): ")
+nombre_usuaris = int(input("Introdueix el nombre d'usuaris afectats:))
+if usuaris <0:
+print("El nombre d'usaris no pot ser negatiu")
+else: 
+alternativa = input ("Hi ha una altenativa de connexio")
+if incidencia_critica == "si" and alternativa == "no":
+    print("Prioritat crítica")
+    elif nombre_usuaris>=10 or incidencia_critica == "si":
+    print ("Prioritat alta")
+    else:
+    print ("Prioritat baixa")
