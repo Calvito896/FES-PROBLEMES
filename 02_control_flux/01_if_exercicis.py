@@ -96,14 +96,16 @@
 # afecta almenys 10 usuaris o un servei crític; en qualsevol altre cas, baixa.
 
 incidencia_critica = input("La incidencia afecta un servei crític? (si/no): ")
-nombre_usuaris = int(input("Introdueix el nombre d'usuaris afectats:))
-if usuaris <0:
-print("El nombre d'usaris no pot ser negatiu")
+nombre_usuaris = int(input("Introdueix el nombre d'usuaris afectats:" ))
+if nombre_usuaris <0:
+    print("El nombre d'usuaris no pot ser negatiu")
 else: 
-alternativa = input ("Hi ha una altenativa de connexio")
+    alternativa = input ("Hi ha una altenativa de connexio")
+
 if incidencia_critica == "si" and alternativa == "no":
     print("Prioritat crítica")
-    elif nombre_usuaris>=10 or incidencia_critica == "si":
+elif nombre_usuaris>=10 or incidencia_critica == "si":
     print ("Prioritat alta")
-    else:
-    print ("Prioritat baixa")
+
+else:
+      print("Prioritat baixa")
