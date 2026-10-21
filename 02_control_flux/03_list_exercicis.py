@@ -9,11 +9,15 @@
 # el missatge "secret".
 missatge = ["C", "o", "d", "i", " ", "s", "e", "c", "r", "e", "t"]
 novallista = missatge[5:11]
+print(novallista)  
 
 # Exercici 2: Intercanvi de posicions
 # Donada la llista següent:
 # nombres = [10, 20, 30, 40, 50]
 # Intercanvia la primera i l'última posició fent servir només l'assignació per índex.
+nombres = [10, 20, 30, 40, 50]
+nombres[0], nombres[4] = nombres[4], nombres[0]
+print(nombres)
 
 # Exercici 3: L'entrepà de llistes
 # Donades les llistes següents:
@@ -23,18 +27,33 @@ novallista = missatge[5:11]
 # Crea una llista anomenada entrepa que contingui, en aquest ordre, el pa de dalt,
 # els ingredients i el pa de sota.
 
+pa_de_dalt = ["pa de dalt"]
+ingredients = ["pernil", "formatge", "tomàquet"]
+pa_de_sota = ["pa de sota"]
+entrepa = pa_de_dalt+ingredients+pa_de_sota
+print(entrepa)
 # Exercici 4: Duplicar una llista
 # Donada una llista:
 # llista = [1, 2, 3]
 # Crea una llista nova que contingui duplicats els elements de la llista original.
 # Exemple: [1, 2, 3] -> [1, 2, 3, 1, 2, 3]
-
+llista = [1, 2, 3]
+llista_duplicada = llista+llista
 # Exercici 5: Extreure l'element central
 # Donada una llista amb un nombre senar d'elements, extreu-ne l'element central
 # fent servir slicing.
 # Exemple: llista = [10, 20, 30, 40, 50] -> L'element central és 30
+llista = [10, 20, 30, 40, 50]
+centre = len(llista)//2
+print (llista[centre])
+
+
 
 # Exercici 6: Inversió parcial
 # Donada una llista, inverteix-ne només la primera meitat (fent servir slicing
 # i concatenació).
 # Exemple: llista = [1, 2, 3, 4, 5, 6] -> Resultat: [3, 2, 1, 4, 5, 6]
+llista = [1, 2, 3, 4, 5, 6] 
+meitat = len(llista)//2
+llista_invertida = llista[:meitat][::-1] + llista[meitat:]
+print(llista_invertida)
