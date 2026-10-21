@@ -7,6 +7,8 @@
 # missatge = ["C", "o", "d", "i", " ", "s", "e", "c", "r", "e", "t"]
 # Fent servir slicing i concatenació, crea una llista nova que contingui només
 # el missatge "secret".
+missatge = ["C", "o", "d", "i", " ", "s", "e", "c", "r", "e", "t"]
+novallista = missatge[5:11]
 
 # Exercici 2: Intercanvi de posicions
 # Donada la llista següent:
