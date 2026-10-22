@@ -62,23 +62,55 @@ while comptador <= 10:
 # Imprimeix tots els números primers menors o iguals que N fent servir un bucle while.
 # Un número és primer si només és divisible per 1 i per ell mateix.
 
+numero_primer= int(input("Introdueix un numero"))
+
+
 # Exercici 7: Suma fins al zero
 # Demana a l'usuari que introdueixi números enters.
 # Ves sumant els números introduïts fins que l'usuari introdueixi el 0.
 # Al final, imprimeix la suma total. El 0 només serveix per acabar i no s'ha de sumar.
+
+suma =0
+numero=int(input("Introdueix "))
+while numero!=0:
+    suma= suma+numero
+
+print(suma)
 
 # Exercici 8: Comptar les xifres d'un número
 # Demana a l'usuari que introdueixi un número enter positiu.
 # Comptabilitza quantes xifres té fent servir un bucle while.
 # Finalment, imprimeix el nombre de xifres.
 
+numero_positiu= int(input("Introdueix"))
+comptador=0
+while numero_positiu<comptador:
+    comptador+=1
+
+
 # Exercici 9: Seqüència de Fibonacci
 # Demana a l'usuari quants termes de la seqüència de Fibonacci vol veure.
 # Imprimeix aquest nombre de termes fent servir un bucle while.
 # La seqüència comença per 0 i 1; cada terme següent és la suma dels dos anteriors.
+
+fibonacci=int(input("Quants vols veure"))
+inici =0
+
 
 # Exercici 10: Joc d'endevinar el número
 # El número secret és el 7.
 # Demana a l'usuari que provi d'endevinar-lo i continua demanant números amb un bucle while
 # fins que l'encerti.
 # Després de cada intent incorrecte, indica si el número secret és més gran o més petit.
+
+numero_secret=7
+numero_usuari = int(input("Introudeix un numero"))
+while numero_usuari!=numero_secret:
+    if numero_usuari<numero_secret:
+        print("El numero es mes gran")
+    else:
+        print("El numero es mes petit")
+
+    numero_usuari = int(input("Introudeix un numero"))
+print(f"Numero correcte es el {numero_secret}")
+
